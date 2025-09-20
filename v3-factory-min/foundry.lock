@@ -1,0 +1,32 @@
+{
+  "lib/base64": {
+    "tag": {
+      "name": "v1.1.0",
+      "rev": "dcbf852ba545b3d15de0ac0ef88dce934c090c8e"
+    }
+  },
+  "lib/forge-std": {
+    "tag": {
+      "name": "v1.10.0",
+      "rev": "8bbcf6e3f8f62f419e5429a0bd89331c85c37824"
+    }
+  },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v5.0.2",
+      "rev": "dbb6104ce834628e473d2173bbc9d47f81a9eec3"
+    }
+  },
+  "lib/v3-core": {
+    "tag": {
+      "name": "v1.0.0",
+      "rev": "e3589b192d0be27e100cd0daaf6c97204fdb1899"
+    }
+  },
+  "lib/v3-periphery": {
+    "tag": {
+      "name": "v1.0.0",
+      "rev": "464a8a49611272f7349c970e0fadb7ec1d3c1086"
+    }
+  }
+}

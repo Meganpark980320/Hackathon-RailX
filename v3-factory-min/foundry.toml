@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+script = "script"
+out = "out"
+libs = ["lib"]
+auto_detect_solc = true
+evm_version = "paris"   # 또는 "shanghai" (둘 중 하나)  ← Cancun 금지
+via_ir = false          # MCOPY 같은 신옵코드 방지
+optimizer = true
+
+remappings = [
+  # forge-std
+  "forge-std/=lib/forge-std/src/",
+
+  # Uniswap v3
+  "@uniswap/v3-core/=lib/v3-core/",
+  "v3-core/=lib/v3-core/",
+  "@uniswap/v3-periphery/=lib/v3-periphery/contracts/",
+  "v3-periphery/=lib/v3-periphery/contracts/",
+
+  # ✅ OpenZeppelin v3 (Uniswap v3용): 정확히 contracts/까지 매핑
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts-3/contracts/",
+
+  # ✅ OpenZeppelin v5 (우리 Router용): 별칭 @oz-v5 사용
+  "@oz-v5/=lib/openzeppelin-contracts-v5/"
+]

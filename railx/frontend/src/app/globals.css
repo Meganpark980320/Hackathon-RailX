@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* optional: 기본 다크 톤 */
+:root { color-scheme: dark; }
+html, body { height: 100%; }
+select option { color: #111 !important; background: #fff !important; }

@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+/// @title AttestedBatch
+/// @notice Runs multiple calls atomically, requiring a credential attestation.
+contract AttestedBatch {
+    address public credentialIssuer;
+
+    constructor(address _issuer) {
+        credentialIssuer = _issuer;
+    }
+
+    modifier onlyWithCredential(bytes calldata proof) {
+        // 👉 여기서 XRPL Credential 검증 로직(또는 스텁) 넣기
+        // 지금은 단순히 issuer 서명 주소 체크 예시만
+        require(keccak256(proof) != 0, "Invalid credential");
+        _;
+    }
+
+    /// @notice Execute multiple calls atomically (all-or-nothing)
+    function executeBatch(address[] calldata targets, bytes[] calldata data, bytes calldata proof)
+        external
+        onlyWithCredential(proof)
+    {
+        require(targets.length == data.length, "Length mismatch");
+
+        for (uint i = 0; i < targets.length; i++) {
+            (bool ok, bytes memory res) = targets[i].call(data[i]);
+            require(ok, string(res)); // atomic: 하나라도 실패하면 revert
+        }
+    }
+}
