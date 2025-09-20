@@ -42,32 +42,33 @@ XRPL (L1) ←→ XRPL EVM (L2/사이드체인) ←→ 외부 체인(Ethereum 등
 pnpm install
 ```
 
-2. 환경 변수 설정
+
+### 2. 환경 변수 설정
 .env.sample을 복사해 .env 작성:
 
-bash
-
-
+```bash
 FACT=0x5A55c476feA68F487Bd6B4a72B749590b4a84f33
 WXRP=0xFc1Ad88A70C0922F1cf0eCd2D0AcDa0DDecCFfd8
 NPM=0x99771458583aC4be7cDDc2229E6f45c75861c89d
 
 POOL_INIT_CODE_HASH=0xf7bb259e88c32be0c7d67813f9d75c4307dccd6a273848af69e93f1a6af7ede1
+```
 
-3. 컨트랙트 배포
-bash
+### 3. 컨트랙트 배포
+```bash
 
 forge script script/DeployAll.s.sol \
   --rpc-url $NEXT_PUBLIC_RPC_URL \
   --broadcast \
   --private-key $PRIVATE_KEY
-
-4. 프론트엔드 실행
-bash
+```
+### 4. 프론트엔드 실행
+```bash
 
 pnpm dev
+```
 
-🧩 데모 시나리오
+## 🧩 데모 시나리오
 풀 생성: USDT/USDC, XRP/USDC 풀 초기화
 
 유동성 공급: NPM으로 LP NFT 민팅
@@ -77,29 +78,28 @@ pnpm dev
 크로스체인 Escrow (스텁): Batch/기관용 결제 흐름 시뮬레이션
 
 
-📅 해커톤 범위 (MVP)
+## 📅 해커톤 범위 (MVP)
 Stable–Stable / XRP–Stable 스왑 (최소 2개 풀 구동)
 
-📜 참고사항
+## 📜 참고사항
 
-
+```bash
 OWNER_ADDRESS=0xa27A39Cec16d936468dc29d504D1BCaf09472656
 SIGNER_ADDRESS=0x791e719e87B5eF4393316091Dfa6826DdC025711
 
 ADDRESS_ISSUER=r46VPv5eeYLztzSumdoMUFGZZGEWnVHF7N
 ADDRESS_SUBJECT=rJDMHE4Xf7TQ55fixYVYQeNSBwVZbS4vRx
+```
 
 
+## 디렉토리 구조:
 
-디렉토리 구조:
-
-bash
+```bash
 
 /contracts   # Foundry 컨트랙트
-/app         # Next.js 프론트엔드
-/relay       # (예정) 브릿지/에스크로 로직
-/ops         # 배포 스크립트 및 인프라
+/frontend    # Next.js 프론트엔드
 
+```
 🛠️ 로드맵
 ✅ XRPL EVM에서 Uniswap v3 배포
 
