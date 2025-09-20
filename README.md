@@ -14,13 +14,13 @@
 ## 🌐 아키텍처
 
 XRPL (L1) ←→ XRPL EVM (L2/사이드체인) ←→ 외부 체인(Ethereum 등)
-│ │
-│ ├─ Uniswap v3 Factory
-│ ├─ NonfungiblePositionManager (NPM)
-│ ├─ SwapRouter
-│ └─ Escrow / Batch (계획 중)
-│
-└─ KYC 어테스테이션 (향후 ZK 기반 업그레이드 예정)
+ │
+ ├─ Uniswap v3 Factory
+ ├─ NonfungiblePositionManager (NPM)
+ ├─ SwapRouter
+ └─ Credential / Batch
+
+
 
 ---
 
@@ -30,7 +30,9 @@ XRPL (L1) ←→ XRPL EVM (L2/사이드체인) ←→ 외부 체인(Ethereum 등
   - `UniswapV3Factory`, `NonfungiblePositionManager`, `SwapRouter`
 - **프론트엔드**: Next.js 15, TypeScript, Wagmi + Viem, Tailwind
 - **인프라**: XRPL EVM RPC ([testnet](https://rpc.testnet.xrplevm.org)), QuickNode
-- **도구**: Forge, Cast, pnpm, Vercel
+- **도구**: Forge, Cast, pnpm
+
+- 
 
 ---
 
@@ -68,20 +70,9 @@ forge script script/DeployAll.s.sol \
 pnpm dev
 ```
 
-## 🧩 데모 시나리오
-풀 생성: USDT/USDC, XRP/USDC 풀 초기화
-
-유동성 공급: NPM으로 LP NFT 민팅
-
-스왑 실행: SwapRouter를 통한 토큰 교환
-
-크로스체인 Escrow (스텁): Batch/기관용 결제 흐름 시뮬레이션
 
 
-## 📅 해커톤 범위 (MVP)
-Stable–Stable / XRP–Stable 스왑 (최소 2개 풀 구동)
-
-## 📜 참고사항
+## 📜 참고 주소
 
 ```bash
 OWNER_ADDRESS=0xa27A39Cec16d936468dc29d504D1BCaf09472656
@@ -100,13 +91,12 @@ ADDRESS_SUBJECT=rJDMHE4Xf7TQ55fixYVYQeNSBwVZbS4vRx
 /frontend    # Next.js 프론트엔드
 
 ```
-🛠️ 로드맵
+## 🛠️ 로드맵
+
 ✅ XRPL EVM에서 Uniswap v3 배포
 
 ✅ 기본 스왑 & 유동성 UI
 
-🔲 Axelar 브릿지 데모
-
-🔲 ZK 어테스테이션
+✅ Axelar 브릿지 데모
 
 🔲 메인넷 배포
