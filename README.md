@@ -84,10 +84,13 @@ ADDRESS_SUBJECT=rJDMHE4Xf7TQ55fixYVYQeNSBwVZbS4vRx
 ```
 ## 🛠️ 로드맵
 
-T+1~2: JPYC, XSGD 풀 확대, LP 인센티브 실험, OOBank, KRWK-RailX 해외 송금 PoC 수행
-T+3~4: 국내 3개 은행과 추가로 RailX 기반 해외 송금 PoC, Ripple과 RLUSD 유동성 공급 계약
-T+6: Delta-Neutral Vault 알파, 오라클/리스크 엔진 고도화, 내부/외부 보안 Audit 리포팅, 기존 LP 파트너(Amber, DWF)와 유동성 공급 계약
-T+9~12: 2차 스마트 컨트랙트 Audit, 상용화
+T + 1 ~ 2: JPYC, XSGD 풀 확대, LP 인센티브 실험, OOBank, KRWK-RailX 해외 송금 PoC 수행
+
+T + 3 ~ 4: 국내 3개 은행과 추가로 RailX 기반 해외 송금 PoC, Ripple과 RLUSD 유동성 공급 계약
+
+T + 6: Delta-Neutral Vault 알파, 오라클/리스크 엔진 고도화, 내부/외부 보안 Audit 리포팅, 기존 LP 파트너(Amber, DWF)와 유동성 공급 계약
+
+T + 9 ~ 12: 2차 스마트 컨트랙트 Audit, 상용화
 
 https://github.com/user-attachments/assets/85cc6998-7aa8-4d72-8d7b-c6c9d8d2c6be
 
