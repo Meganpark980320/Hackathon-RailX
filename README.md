@@ -5,9 +5,7 @@
 구현된 주요 기능:
 
 - **Uniswap v3 스타일 집중 유동성 풀**
-- **Stable–Stable / XRP–Stable 스왑**
 - **크로스체인 브릿지 플로우 (Axelar, Escrow)**
-- **KYC/기관용 결제(데모에서는 스텁 처리)**
 
 ---
 
