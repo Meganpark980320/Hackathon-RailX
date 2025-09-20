@@ -87,8 +87,9 @@ ADDRESS_SUBJECT=rJDMHE4Xf7TQ55fixYVYQeNSBwVZbS4vRx
 
 ```bash
 
-/contracts   # Foundry 컨트랙트
 /frontend    # Next.js 프론트엔드
+/v3-factory-min   # Foundry 컨트랙트
+
 
 ```
 ## 🛠️ 로드맵
