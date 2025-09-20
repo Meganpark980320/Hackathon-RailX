@@ -1,4 +1,4 @@
-# RailX (XRPL EVM 해커톤 프로토타입)
+<img width="1399" height="634" alt="image" src="https://github.com/user-attachments/assets/45dbeb3f-e8f6-4709-9ca1-01f347f188fe" /># RailX (XRPL EVM 해커톤 프로토타입)
 
 **XRPL EVM Testnet (체인 ID: `1449000`)** 기반으로 구축된 크로스보더 DeFi 프로토타입입니다.  
 
@@ -10,15 +10,7 @@
 ---
 
 ## 🌐 아키텍처
-
-XRPL (L1) ←→ XRPL EVM (L2/사이드체인) ←→ 외부 체인(Ethereum 등)
- │
- ├─ Uniswap v3 Factory
- ├─ NonfungiblePositionManager (NPM)
- ├─ SwapRouter
- └─ Credential / Batch
-
-
+<img width="1399" height="634" alt="스크린샷 2025-09-21 082413" src="https://github.com/user-attachments/assets/fe671193-5490-4c63-963a-36805415d7f6" />
 
 ---
 
@@ -92,14 +84,10 @@ ADDRESS_SUBJECT=rJDMHE4Xf7TQ55fixYVYQeNSBwVZbS4vRx
 ```
 ## 🛠️ 로드맵
 
-✅ XRPL EVM에서 Uniswap v3 배포
-
-✅ 기본 스왑 & 유동성 UI
-
-✅ Axelar 브릿지 데모
-
-🔲 메인넷 배포
-
+T+1~2: JPYC, XSGD 풀 확대, LP 인센티브 실험, OOBank, KRWK-RailX 해외 송금 PoC 수행
+T+3~4: 국내 3개 은행과 추가로 RailX 기반 해외 송금 PoC, Ripple과 RLUSD 유동성 공급 계약
+T+6: Delta-Neutral Vault 알파, 오라클/리스크 엔진 고도화, 내부/외부 보안 Audit 리포팅, 기존 LP 파트너(Amber, DWF)와 유동성 공급 계약
+T+9~12: 2차 스마트 컨트랙트 Audit, 상용화
 
 https://github.com/user-attachments/assets/85cc6998-7aa8-4d72-8d7b-c6c9d8d2c6be
 
