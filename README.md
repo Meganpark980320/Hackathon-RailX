@@ -40,6 +40,7 @@ XRPL (L1) ←→ XRPL EVM (L2/사이드체인) ←→ 외부 체인(Ethereum 등
 
 ```bash
 pnpm install
+```
 
 2. 환경 변수 설정
 .env.sample을 복사해 .env 작성:
