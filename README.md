@@ -21,8 +21,11 @@
 - **프론트엔드**: Next.js 15, TypeScript, Wagmi + Viem, Tailwind
 - **인프라**: XRPL EVM RPC ([testnet](https://rpc.testnet.xrplevm.org)), QuickNode
 - **도구**: Forge, Cast, pnpm
+  
+![EVM Tx1](https://github.com/user-attachments/assets/335eb077-e9bf-4bae-bb09-f1b8bdb7b8a4)
+![EVM Tx2](https://github.com/user-attachments/assets/2981e013-d72f-49a7-a575-67337b0ffea6)
+![photo_2025-09-21_10-21-33](https://github.com/user-attachments/assets/ba046135-d6a8-4513-8c08-571273b018ac)
 
-- 
 
 ---
 
@@ -92,5 +95,5 @@ T + 6: Delta-Neutral Vault 알파, 오라클/리스크 엔진 고도화, 내부/
 
 T + 9 ~ 12: 2차 스마트 컨트랙트 Audit, 상용화
 
-https://github.com/user-attachments/assets/85cc6998-7aa8-4d72-8d7b-c6c9d8d2c6be
+[https://github.com/user-attachments/assets/85cc6998-7aa8-4d72-8d7b-c6c9d8d2c6be](https://youtu.be/fdU40u9N2fI)
 
