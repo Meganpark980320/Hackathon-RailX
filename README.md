@@ -1,4 +1,5 @@
-<img width="1399" height="634" alt="image" src="https://github.com/user-attachments/assets/45dbeb3f-e8f6-4709-9ca1-01f347f188fe" /># RailX (XRPL EVM 해커톤 프로토타입)
+
+# RailX (XRPL EVM 해커톤 프로토타입)
 
 **XRPL EVM Testnet (체인 ID: `1449000`)** 기반으로 구축된 크로스보더 DeFi 프로토타입입니다.  
 
